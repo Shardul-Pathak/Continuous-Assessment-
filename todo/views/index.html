@@ -1,0 +1,63 @@
+<?php require 'views/header.html'; ?>
+<h1 style="margin: 5px;"><b>All Todos</b></h1>
+<?php foreach($todos as $todo) { ?>
+<article>
+    <header>
+        <small>Due: <?=$todo->formatDueDate();?></small>
+    </header>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3><?=$todo->description;?></h3>
+            <?php
+                $color = 'red';
+                $status = 'Pending';
+                
+                if ($todo->isCompleted) {
+                    $color = 'green';
+                    $status = 'Completed';
+                }
+            ?>
+            <span class="badge" style="background-color: <?=$color;?>; color: white; padding: 0.25rem 0.5rem; border-radius: 0.25rem;">
+                <?=$status;?>
+            </span>
+        </div>
+        <footer>
+            <?php if (! $todo->isCompleted): ?>
+                <a href="markcompleted.php?id=<?=$todo->id;?>">Mark Complete</a>
+            <?php endif; ?>
+            <a style="margin: 3px;" href="edit.php?id=<?=$todo->id;?>">Edit</a>
+            <a style="margin: 3px;color: red;" href="delete.php?id=<?=$todo->id;?>">Delete</a>
+        </footer>
+</article>
+<?php } ?>
+<h1 style="margin: 5px;"><b>Due Today</b></h1>
+<?php foreach($todosDueToday as $todo) { ?>
+<article>
+    <header>
+        <small>Due: <?=$todo->formatDueDate();?></small>
+    </header>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3><?=$todo->description;?></h3>
+            <?php
+                $color = 'red';
+                $status = 'Pending';
+                
+                if ($todo->isCompleted) {
+                    $color = 'green';
+                    $status = 'Completed';
+                }
+            ?>
+            <span class="badge" style="background-color: <?=$color;?>; color: white; padding: 0.25rem 0.5rem; border-radius: 0.25rem;">
+                <?=$status;?>
+            </span>
+        </div>
+        <footer>
+            <?php if (! $todo->isCompleted): ?>
+                <a href="markcompleted.php?id=<?=$todo->id;?>">Mark Complete</a>
+            <?php endif; ?>
+            <a style="margin: 3px;" href="edit.php?id=<?=$todo->id;?>">Edit</a>
+            <a style="margin: 3px;color: red;" href="delete.php?id=<?=$todo->id;?>">Delete</a>
+        </footer>
+</article>
+<?php } ?>
+
+<?php require 'views/footer.html'; ?>

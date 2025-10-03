@@ -18,21 +18,21 @@ This app allows users to create, manage, and organize their daily tasks efficien
 ## 📸 Screenshots
 
 ### 1. Home Page – Task List
-![Todo App - Home](Output/output1.png)
+![Todo App - Home](Output/Output1.png)
 
 ---
 
 ### 2. Adding a New Todo
-![Todo App - Add Todo](Output/output2.png)
+![Todo App - Add Todo](Output/Output2.png)
 
 ---
 
 ### 3. Editing a Todo
-![Todo App - Edit Todo](Output/output3.png)
+![Todo App - Edit Todo](Output/Output3.png)
 
 ---
 
 ### 4. Completed Todos
-![Todo App - Completed](Output/output4.png)
+![Todo App - Completed](Output/Output4.png)
 
 ---

@@ -37,6 +37,6 @@ This app allows users to create, manage, and organize their daily tasks efficien
 ---
 
 ### 4. Completed Todos
-![Todo App - Completed](Output/Output7.png)
+![Todo App - Completed](Output/Output6.png)
 
 ---

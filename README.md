@@ -23,16 +23,20 @@ This app allows users to create, manage, and organize their daily tasks efficien
 ---
 
 ### 2. Adding a New Todo
-![Todo App - Add Todo](Output/Output2.png)
+![Todo App - Add Todo](Output/Output3.png)
+
+![Todo App - Add Todo](Output/Output4.png)
 
 ---
 
 ### 3. Editing a Todo
-![Todo App - Edit Todo](Output/Output3.png)
+![Todo App - Edit Todo](Output/Output5.png)
+
+![Todo App - Edit Todo](Output/Output6.png)
 
 ---
 
 ### 4. Completed Todos
-![Todo App - Completed](Output/Output4.png)
+![Todo App - Completed](Output/Output7.png)
 
 ---
